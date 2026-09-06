@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuuz MES Accelerator &mdash; Fuuz Accelerator</title>
+<meta name="description" content="Fuuz Platform MES Accelerator - shop floor production Manufacturing Execution package">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://accelerators.fuuz.com/fuuz-mes-accelerator/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://accelerators.fuuz.com/fuuz-mes-accelerator/">
+<meta property="og:site_name" content="Fuuz Accelerators">
+<meta property="og:title" content="Fuuz MES Accelerator &mdash; Fuuz Accelerator">
+<meta property="og:description" content="Fuuz Platform MES Accelerator - shop floor production Manufacturing Execution package">
+<link rel="icon" href="assets/appicon-violet.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="prose.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Fuuz MES Accelerator",
+  "url": "https://accelerators.fuuz.com/fuuz-mes-accelerator/",
+  "description": "Fuuz Platform MES Accelerator - shop floor production Manufacturing Execution package",
+  "codeRepository": "https://github.com/Fuuz-Platform/fuuz-mes-accelerator",
+  "applicationCategory": "BusinessApplication",
+  "runtimePlatform": "Fuuz",
+  "author": {
+    "@type": "Organization",
+    "name": "Fuuz",
+    "url": "https://fuuz.com"
+  }
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="assets/logo-horizontal-on-midnight.svg" alt="Fuuz"></a>
+    <span class="section">Accelerators</span>
+    <nav><a href="#the-scenario">The Scenario</a><a href="#one-application-one-platform">One Application, One Platform</a><a href="#93-data-models">93 Data Models</a><a href="https://github.com/Fuuz-Platform/fuuz-mes-accelerator">GitHub</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap hero">
+  <p class="eyebrow">Accelerator &middot; Integration package</p>
+  <h1>Fuuz MES <span class="accent">Accelerator</span></h1>
+  <p class="lede">Fuuz Platform MES Accelerator - shop floor production Manufacturing Execution package</p>
+  <div class="ctas">
+    <a class="cta cta-primary" href="https://github.com/Fuuz-Platform/fuuz-mes-accelerator">Get the package</a>
+    <a class="cta cta-secondary" href="../">All accelerators</a>
+  </div>
+</div>
+<section>
+  <div class="wrap prose">
+<p>A packaged shop-floor production execution application built on the <a href="https://fuuz.app">FUUZ</a> platform — Work Order dispatch, Control Panel-driven production runs, quality checks, genealogy/traceability, and Kanban replenishment, ready to import into a Fuuz tenant.</p>
+<h2 id="the-scenario">The Scenario</h2>
+<p>A discrete manufacturer needs to dispatch Work Orders to the floor, execute them against specific Workunits (equipment/machines/stations) through operator-facing Control Panels, run quality checks at the point of production, and keep a full genealogy trail — without custom development. The MES Accelerator packages that entire flow, from Work Order creation through Production Run execution to Quality and Genealogy, as a single importable Fuuz package.</p>
+<h2 id="one-application-one-platform">One Application, One Platform</h2>
+<p><strong>Package:</strong> <code>Accelerator Package@1.0.6.fuuz</code></p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Models</td>
+<td>93</td>
+</tr>
+<tr>
+<td>Screens</td>
+<td>66</td>
+</tr>
+<tr>
+<td>Data Flows</td>
+<td>29</td>
+</tr>
+<tr>
+<td>Document Designs</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Seeded Reference Data Sets</td>
+<td>25</td>
+</tr>
+</tbody>
+</table></div>
+<p>Built against <strong>platform version 2026.8.0</strong>.</p>
+<h2 id="93-data-models">93 Data Models</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Models</th>
+<th>What They Track</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Work Order Management</strong></td>
+<td>ApprovedWorkunit, WorkOrder, WorkOrderProcess, WorkOrderProcessBom, WorkOrderProcessDistribution, WorkOrderProcessDistributionDependency, WorkOrderStatus</td>
+<td>The unit of demand dispatched to production and its distribution onto specific Workunits</td>
+</tr>
+<tr>
+<td><strong>Production Execution</strong></td>
+<td>Area, ConsumptionType, Container, ContainerBomPattern, ContainerContent, ContainerHandoffStatus, ContainerHistory, ContainerStatus, Defect, DefectSeverity, DefectType, Deviation, DeviationType, ProductionHistory, ProductionHistoryData, ProductionHistoryDataType, ProductionHistoryInput, ProductionHistoryOperator, ProductionRun, ProductionSetupReplenishmentRequests, ProductionStepHistory, ScheduleConfiguration, VinElementValue, Workcenter, Workunit, WorkunitDefect</td>
+<td>The physical/logical site hierarchy, the Workunit resource model, and full production run history</td>
+</tr>
+<tr>
+<td><strong>Work Units, States &amp; Events</strong></td>
+<td>Event, EventCategory, EventList, EventListEvent, Mode, State, StateCategory, StateList, StateListState, WorkunitDevice, WorkunitHistory, WorkunitScrapReason, WorkunitStateHistory</td>
+<td>The state/mode machine each Workunit progresses through, and devices attached to it</td>
+</tr>
+<tr>
+<td><strong>Product &amp; Process Data</strong></td>
+<td>ContainerType, Process, ProcessRoute, ProcessStep, Product, ProductCategory, ProductStage, ProductStrategy, ProductStrategyProcess, ProductStrategyProcessBom, ProductStrategyProcessProduct, ProductStrategyProcessStep, ProductVinConfiguration</td>
+<td>How a product is built — process routes, steps, and strategy, including VIN-rule support for vehicle assembly</td>
+</tr>
+<tr>
+<td><strong>Quality</strong></td>
+<td>QualityCheck, QualityInterval, QualityReport, QualitySpecification, QualitySpecificationCategory, QualitySpecificationProcess, QualitySpecificationProduct, QualitySpecificationProductStep, QualitySpecificationType</td>
+<td>Checks presented at the Control Panel and the reports captured from them</td>
+</tr>
+<tr>
+<td><strong>Control Panels &amp; Production Setup</strong></td>
+<td>ProductionSetupBom, ProductionSetupMaterial, ProductionSetupOperator, ProductionSetupOutput, ProductionSetupOutputStep</td>
+<td>BOM, material, operator, and output configuration for a Workunit's active production setup</td>
+</tr>
+<tr>
+<td><strong>Scheduling</strong></td>
+<td>Kanban, KanbanStatus, KanbanType</td>
+<td>Kanban replenishment card lifecycle and classification</td>
+</tr>
+<tr>
+<td><strong>Employees &amp; Operators</strong></td>
+<td>Employee, EmployeeCertification, EmployeeGroup, OperatorActivity</td>
+<td>Operator master data, certifications, and the activities operators perform on production</td>
+</tr>
+<tr>
+<td><strong>Genealogy &amp; Traceability</strong></td>
+<td>HistoryStatus, OperatorHistory, ScrapReason</td>
+<td>Full operator and history-record traceability</td>
+</tr>
+<tr>
+<td><strong>Storage &amp; Inventory Movement</strong></td>
+<td>Location, LocationStatus, WorkunitInput</td>
+<td>Storage locations and the source material inputs to a Workunit</td>
+</tr>
+<tr>
+<td><strong>Resources &amp; Site Management</strong></td>
+<td>AndonReason, AndonRequest</td>
+<td>Andon request lifecycle and reason codes</td>
+</tr>
+<tr>
+<td><strong>Configuration</strong></td>
+<td>ProductStrategyProcessStepType, ProductionSetupOutputStepStatus</td>
+<td>Process step type and output step status classification</td>
+</tr>
+<tr>
+<td><strong>Product Configuration</strong></td>
+<td>ContainerKitConfiguration</td>
+<td>Required pack pattern for kit-configured container types</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="66-screens">66 Screens</h2>
+<ul>
+<li><strong>10 Quality Screens</strong> — Quality Specification Management, Quality Reports, Quality Intervals, Specification Categories and Products</li>
+<li><strong>9 Control Panel Screens</strong> — Andon Requests, Control Panel variants (IP SubAssy, No Badge, Released Start), Defect/Scrap Select Modals, Mode Management, Production Setup Material Management</li>
+<li><strong>12 Production Execution Screens</strong> — Production Homepage - All Control Panels, Container/Defect Management, Mode/State Change Modals, Distribution Modals, Scrap Reasons</li>
+<li><strong>7 Product &amp; Process Data Screens</strong> — Process Route, Product Category, Product Details/Edit, Product Group, Product Stage Management</li>
+<li><strong>6 Product Configuration Screens</strong> — Container BOM Patterns, Container Kit Configuration, Container Status/Type Management, Picklist Template, Process Management</li>
+<li><strong>6 Work Units, States &amp; Events Screens</strong> — State Category/Management/Modal, Workunit Defects, Workunit Device Map, Workunit Management</li>
+<li><strong>4 Work Order Management Screens</strong> — Build Distribution Modal, Work Order Details Form, Work Order Management, Work Order Status Management</li>
+<li><strong>2 Genealogy Screens</strong> — Production History, Production History Data Types</li>
+<li><strong>2 Employee Screens</strong>, <strong>2 Configuration Screens</strong>, <strong>1 Kanban Management</strong>, <strong>1 Site Management</strong>, <strong>1 Control Panel Access</strong> (WIP Dashboard)</li>
+<li><strong>3 Testing &amp; Utility Screens</strong> — placeholder/test screens not intended for production use</li>
+</ul>
+<h2 id="29-data-flows">29 Data Flows</h2>
+<ul>
+<li><strong>Production Execution</strong> — Control Panel Load Flow, Distribution Listener, Production Functions, Production Run Functions, Parse 2D Barcode - Supplier Label</li>
+<li><strong>Control Panels &amp; Production Setup</strong> — Control Panel Step Functions, Control Panel Web Flow, Data Changes - Andon Request, Pack Functions</li>
+<li><strong>Work Order Management</strong> — Dispatch Functions, Work Order Functions, Work Order Management Web Flow</li>
+<li><strong>Quality</strong> — Create Quality Reports, Get Quality Specifications, Quality Specification Management Webflow</li>
+<li><strong>Work Units, States &amp; Events</strong> — Back Fill End Dates of Workunit History, Scrap &amp; Defect - Workunit Mapping Web Flow, Workunit Functions</li>
+<li><strong>Product &amp; Process Data</strong> — Product Details Web Flow, Container Functions, Container Debug Cleanup, Product Strategy Management Functions</li>
+<li><strong>Integration</strong> — MES_CMMS_Request, MES_WMS Inventory, MES_WMS Material Replenishment</li>
+<li><strong>Resources &amp; Site Management</strong> — Workunit Schedule Assignment Functions, Site Management Web Flow</li>
+<li><strong>Configuration</strong> — Reset Work Order, Web Flow Log</li>
+</ul>
+<h2 id="document-designs">Document Designs</h2>
+<p>Build Manifest, Sub Assembly Label, Work Order Report, Inventory Label.</p>
+<h2 id="seeded-reference-data">Seeded Reference Data</h2>
+<p>This build ships seeded values for <code>WorkOrderStatus</code>, <code>ContainerStatus</code>, <code>KanbanStatus</code>, <code>KanbanType</code>, <code>Process</code>, <code>Mode</code>, <code>ProductStage</code>, <code>TransactionType</code>, <code>ConsumptionType</code>, <code>QualitySpecificationType</code>, and related state/event/access-control lookups, in addition to the standard <code>ApplicationConfiguration</code>, <code>AccessControlPolicy</code>, and <code>AccessControlPolicyGroup</code> sets.</p>
+<h2 id="packaged-integrations">Packaged Integrations</h2>
+<p>Ships flows for connecting to adjacent Fuuz accelerators: <code>MES_WMS Inventory</code>, <code>MES_WMS Material Replenishment</code>, and <code>MES_CMMS_Request</code>.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3>Import into FUUZ</h3>
+<ol>
+<li>Request a <a href="https://forms.zohopublic.com/mfgxonlinesaas/form/TrialNotificationForm/formperma/syUyoccvUH7Ef5DaReDpfM48vuKiZtaGfYN18JPPu9k">free trial of FUUZ</a></li>
+<li>Navigate to <strong>Fuuz Packages</strong></li>
+<li>Upload <code>Accelerator Package@1.0.6.fuuz</code></li>
+<li>Review the import preview and confirm</li>
+<li>Configure your site structure (Area → Workcenter → Workunit → Location) and Product/Process data, then create your first Work Order</li>
+</ol>
+<h3>Explore the Package</h3>
+<p>Each <code>.fuuz</code> file is a gzipped tarball containing three JSON files:</p>
+<pre><code class="language-bash">mkdir extracted &amp;&amp; cd extracted
+tar -xzf &quot;../Accelerator Package@1.0.6.fuuz&quot;
+
+ls -lh
+# manifest.json      - Package metadata (name, version, dependencies)
+# definition.json    - Module groups, modules, and enum seed data
+# package-data.json  - Data models, screens, flows, and seed data
+</code></pre>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>A Fuuz Industrial Intelligence Platform tenant, platform version 2026.8.0 or later</li>
+<li>The Fuuz WMS and/or CMMS Accelerators, if you plan to use the packaged integration flows</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Free Trial</strong></td>
+<td><a href="https://forms.zohopublic.com/mfgxonlinesaas/form/TrialNotificationForm/formperma/syUyoccvUH7Ef5DaReDpfM48vuKiZtaGfYN18JPPu9k">fuuz.app</a></td>
+<td>Request your free trial of FUUZ</td>
+</tr>
+<tr>
+<td><strong>Get Started</strong></td>
+<td><a href="https://getstarted.fuuz.com">getstarted.fuuz.com</a></td>
+<td>Introductory videos and walkthroughs</td>
+</tr>
+<tr>
+<td><strong>FUUZ Academy</strong></td>
+<td><a href="https://academy.fuuz.com">academy.fuuz.com</a></td>
+<td>Online LMS with structured courses and certifications</td>
+</tr>
+<tr>
+<td><strong>Support &amp; Community</strong></td>
+<td><a href="https://support.fuuz.com">support.fuuz.com</a></td>
+<td>Knowledge base, documentation, and customer community</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="license">License</h2>
+<p>© Fuuz. All rights reserved. This package is proprietary software provided for use with the Fuuz Industrial Intelligence Platform. Redistribution or use outside of a licensed Fuuz tenant is not permitted without express written permission.</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Fuuz&reg; is an Enterprise Industrial Intelligence Platform.
+      <a href="https://accelerators.fuuz.com/">All accelerators</a> &middot;
+      <a href="https://github.com/Fuuz-Platform/fuuz-mes-accelerator">Source</a> &middot;
+      <a href="https://fuuz.com">fuuz.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
