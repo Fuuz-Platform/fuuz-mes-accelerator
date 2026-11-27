@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "visibility": "public",
+  "overview": {
+    "tagline": "Fuuz Platform MES Accelerator — shop floor production Manufacturing Execution package",
+    "categories": [
+      "MES",
+      "Production",
+      "Quality"
+    ],
+    "mainImage": {
+      "file": "images/main.png",
+      "alt": "MES — Shop Floor Package: Fuuz title card"
+    },
+    "description": [
+      "A packaged shop-floor production execution application built on the FUUZ platform — Work Order dispatch, Control Panel-driven production runs, quality checks, genealogy/traceability, and Kanban replenishment, ready to import into a Fuuz tenant.",
+      "A discrete manufacturer needs to dispatch Work Orders to the floor, execute them against specific Workunits (equipment/machines/stations) through operator-facing Control Panels, run quality checks at the point of production, and keep a full genealogy trail — without custom development. The MES Accelerator packages that entire flow, from Work Order creation through Production Run execution to Quality and Genealogy, as a single importable Fuuz package."
+    ],
+    "highlights": [
+      {
+        "title": "One shop-floor app",
+        "body": "93 data models, 66 screens and 29 data flows: Work Order dispatch, production runs, quality checks, genealogy and Kanban replenishment."
+      },
+      {
+        "title": "Documents included",
+        "body": "Build Manifest, Sub Assembly Label, Work Order Report and Inventory Label designs."
+      },
+      {
+        "title": "Connects to WMS and CMMS",
+        "body": "Flows for MES to WMS inventory and material replenishment, and maintenance requests to CMMS."
+      }
+    ],
+    "screenshots": []
+  },
+  "pricing": {
+    "model": "free",
+    "detail": "Fuuz accelerators are no cost; you pay only for the Fuuz runtime."
+  },
+  "support": {
+    "email": "sales@fuuz.com",
+    "url": "https://github.com/Fuuz-Platform/fuuz-mes-accelerator",
+    "sla": "No service level agreement. Supported once implemented by a Fuuz services professional or an approved Fuuz partner.",
+    "phone": ""
+  },
+  "security": {
+    "residency": "In the customer's Fuuz environment",
+    "external": false,
+    "externalDetail": "",
+    "certs": "",
+    "notes": "Its packaged integration flows connect only to other Fuuz accelerators (WMS, CMMS) in the same environment."
+  },
+  "install": {
+    "prerequisites": [
+      "Fuuz 2026.8.0 or later",
+      "The Fuuz WMS and/or CMMS accelerators, if you'll use the packaged integration flows"
+    ],
+    "steps": [
+      {
+        "text": "Review the import preview and confirm the import."
+      },
+      {
+        "text": "Configure your site structure: Area, Workcenter, Workunit, Location."
+      },
+      {
+        "text": "Load your Product and Process data."
+      },
+      {
+        "text": "Create your first Work Order."
+      }
+    ],
+    "after": ""
+  }
+}
