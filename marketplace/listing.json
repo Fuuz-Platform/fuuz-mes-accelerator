@@ -10,7 +10,7 @@
     ],
     "mainImage": {
       "file": "images/main.png",
-      "alt": "MES — Shop Floor Package: Fuuz title card"
+      "alt": "MES — Shop Floor Package: Fuuz cover"
     },
     "description": [
       "A packaged shop-floor production execution application built on the FUUZ platform — Work Order dispatch, Control Panel-driven production runs, quality checks, genealogy/traceability, and Kanban replenishment, ready to import into a Fuuz tenant.",
